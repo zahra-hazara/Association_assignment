@@ -10,12 +10,13 @@
         <class>entity.Transaction</class>
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:mariaDb://localhost:3306/exchange"/>
-            <property name="jakarta.persistence.jdbc.user" value="username"/>
-            <property name="jakarta.persistence.jdbc.password" value="password"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mariadb://localhost:3306/exchange"/>
+            <property name="javax.persistence.jdbc.user" value="zahra"/>
+            <property name="javax.persistence.jdbc.password" value="1234"/>
 
             <!-- Hibernate properties -->
-            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MariaDBDialect"/>
+            <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
             <property name="hibernate.show_sql" value="true"/>
         </properties>
